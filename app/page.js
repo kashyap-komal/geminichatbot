@@ -13,7 +13,7 @@ export default function Home() {
   async function generateanswer(){
     setAnswer("loading...");
    const response= await axios({
-      // url: "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=AIzaSyBuutWO4iBFysHtu-B_L7eYB7YeFyyrSMw",
+      // url: "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=your key",
       url: "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${process.env.GOOGLE_GEN_AI_KEY}",
       method: "post",
       data: {
